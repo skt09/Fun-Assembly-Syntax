@@ -2,7 +2,7 @@
     "name": "fun-assembly-syntax",
     "displayName": "Fun Assembly Syntax",
     "description": "This is the syntax highlighting extension for Fun Assembly Language",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "repository": {
         "url": "https://github.com/skt09/Fun-Assembly-Syntax.git"
     },
@@ -10,6 +10,7 @@
     "engines": {
         "vscode": "^1.63.0"
     },
+    "icon": "resources/icon.png",
     "categories": [
         "Programming Languages"
     ],
