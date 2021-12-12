@@ -1,0 +1,36 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Fun Assembly Language",
+	"fileTypes": ["fasml"],
+	"patterns": [
+		{
+			"match": "(IF|JMP|>)",
+			"name": "keyword.control.fasml"
+		},
+		{
+			"match": "(ADD|SUB|MUL|DIV|MOD|POW)",
+			"name": "keyword.operator.arithmetic.fasml"
+		},
+		{
+			"match": "MOV",
+			"name": "storage.type.fasml"
+		},
+		{
+			"match": "(PRT|SCN)",
+			"name": "entity.name.function.io.fasml"
+		},
+		{
+			"match": "(EQL|NEQ|GRT|LOW|GEQ|LEQ)",
+			"name": "keyword.other.fasml"
+		},
+		{
+			"match": "ENDL|TAB|SPC",
+			"name": "string.fasml"
+		},
+		{
+			"match": "\\$[A-Za-z0-9_]*",
+			"name": "constant.rgb-value"
+		}
+	],
+	"scopeName": "source.fasml"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "fun-assembly-syntax",
+    "displayName": "Fun Assembly Syntax",
+    "description": "This is the syntax highlighting extension for Fun Assembly Language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "fasml",
+            "aliases": ["fasml", "fasml"],
+            "extensions": [".fasml"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "fasml",
+            "scopeName": "source.fasml",
+            "path": "./syntaxes/fasml.tmLanguage.json"
+        }]
+    }
+}
