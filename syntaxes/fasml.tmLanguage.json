@@ -4,32 +4,36 @@
 	"fileTypes": ["fasml"],
 	"patterns": [
 		{
-			"match": "(IF|JMP|>)",
+			"match": "^[ ]*(\\bIF\\b|\\bJMP\\b|\\B>\\B)",
 			"name": "keyword.control.fasml"
 		},
 		{
-			"match": "(ADD|SUB|MUL|DIV|MOD|POW)",
+			"match": "^[ ]*\\b(ADD|SUB|MUL|DIV|MOD|POW)\\b",
 			"name": "keyword.operator.arithmetic.fasml"
 		},
 		{
-			"match": "MOV",
+			"match": "^[ ]*\\b(MOV)\\b",
 			"name": "storage.type.fasml"
 		},
 		{
-			"match": "(PRT|SCN)",
+			"match": "^[ ]*\\b(PRT|SCN)\\b",
 			"name": "entity.name.function.io.fasml"
 		},
 		{
-			"match": "(EQL|NEQ|GRT|LOW|GEQ|LEQ)",
+			"match": "\\b(EQL|NEQ|GRT|LOW|GEQ|LEQ)\\b",
 			"name": "keyword.other.fasml"
 		},
 		{
-			"match": "ENDL|TAB|SPC",
+			"match": "^[ ]*\\b(ENDL|TAB|SPC|EXL)\\b",
 			"name": "string.fasml"
 		},
 		{
-			"match": "\\$[A-Za-z0-9_]*",
-			"name": "constant.rgb-value"
+			"match": "\\$[^ \n]+",
+			"name": "constant.rgb-value.fasml"
+		},
+		{
+			"match": "[ ]*(\\![^\n]*)",
+			"name": "comment.fasml"
 		}
 	],
 	"scopeName": "source.fasml"
