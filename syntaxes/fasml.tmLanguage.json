@@ -12,7 +12,7 @@
 			"name": "keyword.operator.arithmetic.fasml"
 		},
 		{
-			"match": "^[ ]*\\b(MOV)\\b",
+			"match": "^[ ]*\\b(MOV|INT)\\b",
 			"name": "storage.type.fasml"
 		},
 		{
@@ -28,7 +28,7 @@
 			"name": "string.fasml"
 		},
 		{
-			"match": "\\$[^ \n]+",
+			"match": "(\\$|\\&)[^ \n]+",
 			"name": "constant.rgb-value.fasml"
 		},
 		{
