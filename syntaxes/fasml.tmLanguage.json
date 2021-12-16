@@ -4,7 +4,7 @@
 	"fileTypes": ["fasml"],
 	"patterns": [
 		{
-			"match": "^[ ]*(\\bIF\\b|\\bJMP\\b|\\B>\\B)",
+			"match": "^[ ]*(\\bIF\\b|\\bJMP\\b|\\bBYE\\b|\\B>\\B)",
 			"name": "keyword.control.fasml"
 		},
 		{
@@ -34,6 +34,10 @@
 		{
 			"match": "[ ]*(\\![^\n]*)",
 			"name": "comment.fasml"
+		},
+		{
+			"match": "^[ ]*\\b(ARR|ARRV)\\b",
+			"name": "variable.parameter.fasml"
 		}
 	],
 	"scopeName": "source.fasml"
