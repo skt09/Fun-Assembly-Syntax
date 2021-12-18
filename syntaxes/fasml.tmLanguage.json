@@ -20,11 +20,11 @@
 			"name": "entity.name.function.io.fasml"
 		},
 		{
-			"match": "\\b(EQL|NEQ|GRT|LOW|GEQ|LEQ)\\b",
+			"match": "\\b(EQL|NEQ|GTR|LSS|GEQ|LEQ)\\b",
 			"name": "keyword.other.fasml"
 		},
 		{
-			"match": "^[ ]*\\b(ENDL|TAB|SPC|EXL)\\b",
+			"match": "^[ ]*\\b(ENDL|TAB|SPC|EXL|DOL|AMP)\\b",
 			"name": "string.fasml"
 		},
 		{

@@ -2,7 +2,7 @@
     "name": "fun-assembly-syntax",
     "displayName": "Fun Assembly Syntax",
     "description": "This is the syntax highlighting extension for Fun Assembly Language",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "repository": {
         "url": "https://github.com/skt09/Fun-Assembly-Syntax.git"
     },
