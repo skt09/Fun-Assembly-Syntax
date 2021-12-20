@@ -1,44 +1,48 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "Fun Assembly Language",
-	"fileTypes": ["fasml"],
-	"patterns": [
-		{
-			"match": "^[ ]*(\\bIF\\b|\\bJMP\\b|\\bBYE\\b|\\B>\\B)",
-			"name": "keyword.control.fasml"
-		},
-		{
-			"match": "^[ ]*\\b(ADD|SUB|MUL|DIV|MOD|POW)\\b",
-			"name": "keyword.operator.arithmetic.fasml"
-		},
-		{
-			"match": "^[ ]*\\b(MOV|INT)\\b",
-			"name": "storage.type.fasml"
-		},
-		{
-			"match": "^[ ]*\\b(PRT|SCN)\\b",
-			"name": "entity.name.function.io.fasml"
-		},
-		{
-			"match": "\\b(EQL|NEQ|GTR|LSS|GEQ|LEQ)\\b",
-			"name": "keyword.other.fasml"
-		},
-		{
-			"match": "^[ ]*\\b(ENDL|TAB|SPC|EXL|DOL|AMP)\\b",
-			"name": "string.fasml"
-		},
-		{
-			"match": "(\\$|\\&)[^ \n]+",
-			"name": "constant.rgb-value.fasml"
-		},
-		{
-			"match": "[ ]*(\\![^\n]*)",
-			"name": "comment.fasml"
-		},
-		{
-			"match": "^[ ]*\\b(ARR|ARRV)\\b",
-			"name": "variable.parameter.fasml"
-		}
-	],
-	"scopeName": "source.fasml"
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "Fun Assembly Language",
+    "fileTypes": ["fasml"],
+    "patterns": [
+        {
+            "match": "^[ ]*(\\bIF\\b|\\bJMP\\b|\\bBYE\\b|\\B>\\B)",
+            "name": "keyword.control.fasml"
+        },
+        {
+            "match": "^[ ]*\\b(ADD|SUB|MUL|DIV|MOD|POW)\\b",
+            "name": "keyword.operator.arithmetic.fasml"
+        },
+        {
+            "match": "^[ ]*\\b(MOV|INT|STR|CAT)\\b",
+            "name": "storage.type.fasml"
+        },
+        {
+            "match": "^[ ]*\\b(PRT|SCN)\\b",
+            "name": "entity.name.function.io.fasml"
+        },
+        {
+            "match": "\\b(EQL|NEQ|GTR|LSS|GEQ|LEQ|SEQL|SNEQ)\\b",
+            "name": "keyword.other.fasml"
+        },
+        {
+            "match": "^[ ]*\\b(ENDL|TAB|SPC|EXL|DOL|AMP)\\b",
+            "name": "string.fasml"
+        },
+        {
+            "match": "(\\$|\\&)[^ \n]+",
+            "name": "constant.rgb-value.fasml"
+        },
+        {
+            "match": "[ ]*(\\![^\n]*)",
+            "name": "comment.fasml"
+        },
+        {
+            "match": "^[ ]*\\b(ARR|ARRV)\\b",
+            "name": "variable.parameter.fasml"
+        },
+        {
+            "match": "\\bNULL\\b",
+            "name": "constant.character.fasml"
+        }
+    ],
+    "scopeName": "source.fasml"
 }
