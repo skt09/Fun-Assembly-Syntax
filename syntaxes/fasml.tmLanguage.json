@@ -16,16 +16,12 @@
             "name": "storage.type.fasml"
         },
         {
-            "match": "^[ ]*\\b(PRT|SCN)\\b",
+            "match": "^[ ]*\\b(PRT|SCN|SCNL)\\b",
             "name": "entity.name.function.io.fasml"
         },
         {
             "match": "\\b(EQL|NEQ|GTR|LSS|GEQ|LEQ|SEQL|SNEQ)\\b",
             "name": "keyword.other.fasml"
-        },
-        {
-            "match": "^[ ]*\\b(ENDL|TAB|SPC|EXL|DOL|AMP)\\b",
-            "name": "string.fasml"
         },
         {
             "match": "(\\$|\\&)[^ \n]+",
