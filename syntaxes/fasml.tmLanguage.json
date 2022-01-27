@@ -12,7 +12,7 @@
             "name": "keyword.operator.arithmetic.fasml"
         },
         {
-            "match": "^[ ]*\\b(MOV|INT|STR|CAT)\\b",
+            "match": "^[ ]*\\b(MOV|INT|STR|CAT|EXPR|RPXE)\\b",
             "name": "storage.type.fasml"
         },
         {
@@ -32,7 +32,7 @@
             "name": "comment.fasml"
         },
         {
-            "match": "^[ ]*\\b(ARR|ARRV)\\b",
+            "match": "^[ ]*\\b(ARR|ARRI|ARRV)\\b",
             "name": "variable.parameter.fasml"
         },
         {
