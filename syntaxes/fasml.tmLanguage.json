@@ -12,7 +12,7 @@
             "name": "keyword.operator.arithmetic.fasml"
         },
         {
-            "match": "^[ ]*\\b(MOV|INT|STR|CAT|EXPR|RPXE)\\b",
+            "match": "^[ ]*\\b(MOV|INT|STR|CAT|TAC|EXPR|RPXE)\\b",
             "name": "storage.type.fasml"
         },
         {
@@ -24,11 +24,11 @@
             "name": "keyword.other.fasml"
         },
         {
-            "match": "(\\$|\\&)[^ \n]+",
+            "match": "[\\$|&][^ \\n]+",
             "name": "constant.rgb-value.fasml"
         },
         {
-            "match": "[ ]*(\\![^\n]*)",
+            "match": "\\B![^\\n]*",
             "name": "comment.fasml"
         },
         {
