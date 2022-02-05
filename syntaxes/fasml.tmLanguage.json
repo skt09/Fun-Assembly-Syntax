@@ -12,8 +12,12 @@
             "name": "keyword.operator.arithmetic.fasml"
         },
         {
-            "match": "^[ ]*\\b(MOV|INT|STR|CAT|TAC|EXPR|RPXE)\\b",
+            "match": "^[ ]*\\b(MOV|INT|STR|CAT|EXPR)\\b",
             "name": "storage.type.fasml"
+        },
+        {
+            "match": "^[ ]*\\b(CALL|RECV|RET)\\b",
+            "name": "entity.name.function.fasml"
         },
         {
             "match": "^[ ]*\\b(PRT|SCN|SCNL)\\b",
@@ -24,12 +28,12 @@
             "name": "keyword.other.fasml"
         },
         {
-            "match": "[\\$|&][^ \\n]+",
+            "match": "[\\$&][^ ]+",
             "name": "constant.rgb-value.fasml"
         },
         {
-            "match": "\\B![^\\n]*",
-            "name": "comment.fasml"
+            "match": "!.*",
+            "name": "comment.line.fasml"
         },
         {
             "match": "^[ ]*\\b(ARR|ARRI|ARRV)\\b",
