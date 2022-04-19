@@ -42,6 +42,10 @@
         {
             "match": "\\bNULL\\b",
             "name": "constant.character.fasml"
+        },
+        {
+            "match": "\\b(FREAD|FWRITE|FDEL)\\b",
+            "name": "entity.name.method.fasml"
         }
     ],
     "scopeName": "source.fasml"
