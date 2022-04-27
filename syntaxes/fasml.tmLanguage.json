@@ -8,7 +8,7 @@
             "name": "keyword.control.fasml"
         },
         {
-            "match": "^[ ]*\\b(ADD|SUB|MUL|DIV|MOD|POW)\\b",
+            "match": "^[ ]*\\b(ADD|SUB|MUL|DIV|MOD|POW|AND|OR|NOT|BAND|BOR|BNOT|BXOR|LSHIFT|RSHIFT)\\b",
             "name": "keyword.operator.arithmetic.fasml"
         },
         {
@@ -16,7 +16,7 @@
             "name": "storage.type.fasml"
         },
         {
-            "match": "^[ ]*\\b(CALL|RECV|RET)\\b",
+            "match": "^[ ]*\\b(CALL|RECV|RET|FCALL|FRET)\\b",
             "name": "entity.name.function.fasml"
         },
         {
